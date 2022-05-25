@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html,body{height: 100%;}
+
+.sidebar{
+    float: left;
+    width: 250px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: black;
+    overflow-x: hidden; 
+}
+
+.sidebar-wrapper{
+    padding-bottom: 200px;
+}
+
+.sidebar_menu{
+    margin: 20px 0;
+    color: rgb(190,190,190);
+}
+
+.sidebar_logo img{
+    max-width: 250px;
+    width: 100%;
+}
+
+.sidebar_menu a{
+    color: rgb(190,190,190);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.sidebar_menu svg{
+    margin: 0 20px;
+}
+
+.sidebar_menu_item{
+    margin-top: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.sidebar_menu p.sidebar_menu_title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.sidebar_menu_item_componente{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(190,190,190);
+    border-radius: 3px;
+}
+
+.sidebar_menu_item span:hover{
+    color: white;
+}
+
+.sidebar_menu a:hover{
+    color: white;
+}
+
+.sidebar_menu_logo{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.sidebar_menu_item span{
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+.sidebar_playlists{
+    font-size: 15px;
+    padding: 10px 0;
+    border-top: 1px solid rgb(40,40,40);
+}
+
+.sidebar_playlists a{
+    margin: 12px 0;
+    display: block;
+    color: rgb(190,190,190);
+    text-decoration: none;
+}
+
+.sidebar_playlists a:hover{
+    color: white;
+}
+
+/*Parte principal do app--MAIN*/
+
+.main{
+    width: calc(100% - 250px);
+    background-image: linear-gradient(180deg, #343434, rgb(8, 8, 8));
+    height: 100%;
+    float: left;
+    padding: 15px 50px;
+    overflow-y: auto;
+}
+
+.main-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.main-wraper{
+    padding-bottom: 200px;
+}
+
+.main-img {
+    height: 140px;
+    width: 140px;
+}
+
+.main-row-title{
+    width: 100%;
+}
+
+.main-row-title h2{
+    color: white;
+}
+
+.main-col{
+    cursor: pointer;
+    width: 160px;
+    margin-right: 2%;
+    margin-top: 20px;
+    background-color: #282828;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    font-size: 12px;
+}
+
+.main-col h3{
+    color: white;
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.main-col p{
+    color: rgb(190,190,190);
+    margin: 8px 0;
+    font-size: 13px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.player{
+    width: 100%;
+    padding: 20px;
+    height: 130px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(60,60,60);
+}
+
+.player_artist{
+    width: 20%;
+}
+
+.player_artist img{
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.player_artist h3{
+    display: inline-block;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.player_artist h3 > span{
+    color: rgb(200,200,200);
+    font-size: 13px;
+}
+
+.player_control{
+    width: 70%;
+    text-align: center;
+}
+
+.player_control_buttons a{
+    color: white;
+    margin: 8px 15px;
+    font-size: 23px;
+}
+
+.player_control_progress{
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    background: rgb(130,130,130);
+}
+
+.player_control_progress2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1700px){
+    .main-col{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main-col{
+        width: 48%;
+        margin-right: 2%;
+    }
+}
