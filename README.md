@@ -1,6 +1,6 @@
 # Projeto Clone Spotify
 
-Projeto feito em 2 horas utilizando as seguintes ferramentas:
+Projeto feito em 3 horas utilizando as seguintes ferramentas:
 
 - HTML5
 - CSS3
