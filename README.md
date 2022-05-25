@@ -6,4 +6,5 @@ Projeto feito em 3 horas utilizando as seguintes ferramentas:
 - CSS3
 - JavaScript
 
-LinkedIn : https://www.linkedin.com/in/victor-oliveira-275836231/
+LinkedIn : www.linkedin.com/in/vxtxsilva
+
